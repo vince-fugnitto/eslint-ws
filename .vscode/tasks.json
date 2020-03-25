@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "test",
+            "problemMatcher": [
+                {
+                    "owner": "eslint",
+                    "source": "eslint",
+                    "applyTo": "allDocuments",
+                    "fileLocation": "absolute",
+                    "pattern": [
+                        {
+                            "regexp": "^([^\\s].*)$",
+                            "kind": "location",
+                            "file": 1
+                        },
+                        {
+                            "regexp": "^\\s+(\\d+):(\\d+)\\s+(error|warning|info)\\s+(.+?)(?:\\s\\s+(.*))?$",
+                            "line": 1,
+                            "column": 2,
+                            "severity": 3,
+                            "message": 4,
+                            "code": 5,
+                            "loop": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

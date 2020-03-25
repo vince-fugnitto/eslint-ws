@@ -8,8 +8,8 @@
             "script": "test",
             "problemMatcher": [
                 {
-                    "owner": "eslint",
-                    "source": "eslint",
+                    "owner": "vince",
+                    "source": "vince",
                     "applyTo": "allDocuments",
                     "fileLocation": "absolute",
                     "pattern": [
